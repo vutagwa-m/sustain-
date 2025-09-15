@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ecebe7; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Full-page container */
+.register-page {
+  display: flex;
+    width: 131vh;
+    height: 100vh;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    gap: 30px;
+}
+.register-image {
+  flex: 5;
+  background: url("../../assets/register-image.jpeg") no-repeat center center/cover;
+}
+
+/* Right Side - Login Form */
+.register-box {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+  background: transparent;
+}
+/* Heading */
+.register-page h2 {
+  color: #d3b8b8;
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+
+/* Input fields */
+.register-page input,
+.register-page select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: transparent;
+  border: 1px solid #4CAF50;
+  border-radius: 6px;
+  color: #a09e9e;
+  font-size: 16px;
+}
+
+.register-page input::placeholder {
+  color: #888;
+}
+
+/* Register button */
+.register-page .email-reg {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #4CAF50;
+  background: transparent;
+  color: #4CAF50;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-page .email-reg:hover {
+  border-radius: none;
+}
+
+/* Registration options */
+.register-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: -30px;
+  background: transparent;
+  margin-top: -15px;
+}
+
+.google-btn,
+.phone-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.google-btn img,
+.phone-btn img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+/* Registration link */
+.register-page p {
+  margin-top: 15px;
+}
+
+.register-page a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.register-page a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .register-page form {
+    width: 90%;
+  }
+}

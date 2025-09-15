@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ecebe7; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* login.css */
+/* Full-page container */
+.login-container {
+  display: flex;
+    width: 129vh;
+    height: 90vh;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    gap: 30px;
+  }
+  .login-image {
+    flex: 4;
+    background: url("../../assets/register-image.jpeg") no-repeat center center/cover;
+}
+
+
+/* Centered login box */
+.login-box {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 30px;
+  background: transparent;
+}
+/* Heading */
+.login-box h2 {
+  font-size: 28px;
+  color: #2c5e1a;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: transparent;
+  border: 1px solid #4CAF50;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+}
+
+.login-box input::placeholder {
+  color: #888;
+}
+
+/* Login button */
+.login-box .email-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #4CAF50;
+  background: transparent;
+  color: #4CAF50;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-box .email-login:hover {
+  background: #4CAF50;
+  color: white;
+}
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  background: transparent;
+}
+
+.google-login, .phone-login {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.google-login img, .phone-login img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.phone-login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.phone-login-form input {
+  width: 80%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.otp-login {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.otp-login:disabled {
+  background-color: #ccc;
+}
+/* Registration link */
+.login-box p {
+  margin-top: 15px;
+}
+
+.login-box a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+  }
+}
